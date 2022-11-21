@@ -1,0 +1,113 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%, 0.15);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-content: center;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  padding-inline: 1rem;
+}
+.star {
+  padding: 1.4rem;
+  background-color: var(--light-grey);
+  border-radius: 100%;
+}
+.card {
+  background-color: var(--dark-blue);
+  padding: 3rem;
+  max-width: 40rem;
+  display: grid;
+  row-gap: 2.4rem;
+  border-radius: 2rem;
+}
+.rating {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+}
+.rating__btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  border: none;
+  color: var(--medium-grey);
+  background-color: var(--light-grey);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.primary-heading {
+  font-size: 2.4rem;
+}
+.secendary-heading {
+  font-size: 1.8rem;
+  color: var(--medium-grey);
+  line-height: 1.4;
+}
+.btn {
+  padding-block: 1.5rem;
+  border-radius: 100vmax;
+  color: var(--white);
+  background-color: var(--Orange);
+  letter-spacing: 2px;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.rating__btn:hover {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+.rating__btn:focus {
+  color: var(--white);
+  background-color: var(--Orange);
+}
+.btn:hover {
+  background-color: var(--white);
+  color: var(--Orange);
+}
+/* .card .illustration {
+  justify-self: center;
+} */
+.back > * {
+  justify-self: center;
+}
+.back {
+  text-align: center;
+}
+.tertairy {
+  color: var(--Orange);
+  font-size: 1.6rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 100vmax;
+  background-color: var(--light-grey);
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 25rem) {
+  html {
+    font-size: 56.5%;
+  }
+} ;
